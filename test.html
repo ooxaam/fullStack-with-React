@@ -1,0 +1,95 @@
+
+    <div id="reserveTblModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Reserve Table</h3>
+                    <button type="button" role="button" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="reserveTbl">
+                        <div class="form-group row">
+                            <label for="noOfGuests" class="col-md-2 col-form-label"> No Of Guests </label>
+                            <div class="col-md-6 mt-2">
+                                <label class="radio-inline"><input type="radio" name="optradio"> 1</label>
+                                <label class="radio-inline"><input type="radio" name="optradio"> 2</label>
+                                <label class="radio-inline"><input type="radio" name="optradio"> 3</label>
+                                <label class="radio-inline"><input type="radio" name="optradio"> 4</label>
+                                <label class="radio-inline"><input type="radio" name="optradio"> 5</label>
+                                <label class="radio-inline"><input type="radio" name="optradio"> 6</label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="section" class="col-md-2 col-form-label"> Section </label>
+                            <div class="col-md-6 mt-2">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary btn-success active">
+                                        <input type="radio" name="options" id="nonSmoking" autocomplete="off" checked>
+                                        Non-Smoking
+                                    </label>
+                                    <label class="btn btn-secondary btn-danger">
+                                        <input type="radio" name="options" id="smoking" autocomplete="off"> Smoking
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dateAndTime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                            <div class="col col-sm-4">
+                                <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col col-sm-4">
+                                <input type="time" class="form-control" id="time" name="time" placeholder="time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" data-dismiss="modal" role="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                    id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
